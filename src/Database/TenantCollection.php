@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Stancl\Tenancy\Database;
 
-use Hyperf\Utils\Collection;
+use Hyperf\Database\Model\Collection;
 use Stancl\Tenancy\Contracts\Tenant;
 
 /**
