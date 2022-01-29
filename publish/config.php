@@ -181,16 +181,16 @@ return [
      * Parameters used by the tenants:migrate command.
      */
     'migration_parameters' => [
-        '--force' => true, // This needs to be true to run migrations in production.
-        '--path' => [database_path('migrations/tenant')],
-        '--realpath' => true,
+        // '--force' => true, // This needs to be true to run migrations in production.
+        // '--path' => [database_path('migrations/tenant')],
+        // '--realpath' => true,
     ],
 
     /**
      * Parameters used by the tenants:seed command.
      */
     'seeder_parameters' => [
-        '--class' => 'DatabaseSeeder', // root seeder class
+        // '--class' => 'DatabaseSeeder', // root seeder class
         // '--force' => true,
     ],
 ];

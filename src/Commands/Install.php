@@ -20,14 +20,14 @@ class Install extends Command
      *
      * @var string
      */
-    protected $signature = 'tenancy:install';
+    protected $signature = 'tenants:install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Install stancl/tenancy.';
+    protected $description = 'Install lianglong/hyperf-tenancy.';
 
     /**
      * Execute the console command.
@@ -36,9 +36,9 @@ class Install extends Command
      */
     public function handle()
     {
-        $this->comment('Installing stancl/tenancy...');
+        $this->comment('Installing lianglong/hyperf-tenancy...');
         $this->call('vendor:publish', [
-            '--package' => 'stancl/tenancy',
+            '--package' => 'lianglong/hyperf-tenancy',
         ]);
         $this->info('✔️  Created config/tenancy.php');
 
@@ -76,6 +76,6 @@ class Install extends Command
 //            $this->info('✔️  Created database/migrations/tenant folder.');
 //        }
 
-        $this->comment('✨️ stancl/tenancy installed successfully.');
+        $this->comment('✨️ lianglong/hyperf-tenancy installed successfully.');
     }
 }
